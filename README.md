@@ -1,2 +1,5 @@
 # Dwarf-s-Tyranny-Forge-Mod
-Minecraft Mod : Dwarf's Tyranny
+
+## Informations
+- ModLoader : Forge 1.20.X
+- Minecraft Mod Name : Dwarf's Tyranny
