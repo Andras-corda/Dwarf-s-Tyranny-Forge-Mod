@@ -1,17 +1,47 @@
 package com.retro.dwarfstyranny;
 
+import com.mojang.logging.LogUtils;
+import com.retro.dwarfstyranny.block.DwarfsBlocks;
+import com.retro.dwarfstyranny.item.DwarfsCreativeModeTabs;
+import com.retro.dwarfstyranny.item.DwarfsItems;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
+import org.slf4j.Logger;
 
-@Mod(DwarfsTyranny.MOD_ID)
+@Mod(DwarfsTyranny.MODID)
+// Class principale
 public class DwarfsTyranny {
-    public static final String MOD_ID = "dwarfstyranny";
+
+    // ID
+    public static final String MODID = "dwarfstyranny";
+    // Log
+    private static final Logger LOGGER = LogUtils.getLogger();
+
+    @SuppressWarnings("removal")
 
     public DwarfsTyranny() {
-        IEventBus bus = FMLJavaModLoadingContext.get().getModEventBus();
+        IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
+
+        // blocs
+        DwarfsBlocks.BLOCKS.register(modEventBus);
+
+        //items
+        DwarfsItems.ITEMS.register(modEventBus);
+
+        // onglet crea
+        DwarfsCreativeModeTabs.register(modEventBus);
+
+        modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
-        System.out.println("DwarfsTyranny mod chargé !");
+
+        // Output
+        LOGGER.info("DwarfsTyranny mod chargé !");
+    }
+
+    private void commonSetup(final FMLCommonSetupEvent event) {
+
     }
 }
