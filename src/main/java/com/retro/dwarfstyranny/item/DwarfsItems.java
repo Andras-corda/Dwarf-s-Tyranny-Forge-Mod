@@ -136,8 +136,12 @@ public class DwarfsItems {
 
     /// <summary>
     /// Deepslate mythril ore block
+    /// Engraving Table
     /// </summary>
     public static final RegistryObject<Item> DEEPSLATE_MYTHRIL_ORE = ITEMS.register("deepslate_mythril_ore",
             () -> new BlockItem(DwarfsBlocks.DEEPSLATE_MYTHRIL_ORE.get(), new Item.Properties()));
+
+    public static final RegistryObject<Item> ENGRAVING_TABLE = ITEMS.register("engraving_table",
+            () -> new BlockItem(DwarfsBlocks.ENGRAVING_TABLE.get(), new Item.Properties()));
 
 }

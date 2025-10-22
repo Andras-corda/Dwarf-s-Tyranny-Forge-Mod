@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "category": "misc",
+  "pattern": [
+    "MMM",
+    "SSS",
+    " S "
+  ],
+  "key": {
+    "M": {
+      "item": "dwarfstyranny:mythril_ingot"
+    },
+    "S": {
+      "item": "minecraft:stone"
+    }
+  },
+  "result": {
+    "item": "dwarfstyranny:engraving_table"
+  }
+}

@@ -46,6 +46,11 @@ public class DwarfsCreativeModeTabs {
                         output.accept(DwarfsItems.GOLDEN_HAMMER.get());
                         output.accept(DwarfsItems.DIAMOND_HAMMER.get());
                         output.accept(DwarfsItems.NETHERITE_HAMMER.get());
+
+                        // Engraving Table
+                        // Engraving Table
+                        // Engraving Table
+                        output.accept(DwarfsItems.ENGRAVING_TABLE.get());
                     })
                     .build());
 

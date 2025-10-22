@@ -28,11 +28,17 @@ public class DwarfsTyranny {
         // blocs
         DwarfsBlocks.BLOCKS.register(modEventBus);
 
+        // block entities
+        DwarfsBlockEntities.register(modEventBus);
+
         //items
         DwarfsItems.ITEMS.register(modEventBus);
 
         // onglet crea
         DwarfsCreativeModeTabs.register(modEventBus);
+
+        // menus
+        DwarfsMenuTypes.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
         MinecraftForge.EVENT_BUS.register(this);
