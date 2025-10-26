@@ -144,4 +144,10 @@ public class DwarfsItems {
     public static final RegistryObject<Item> ENGRAVING_TABLE = ITEMS.register("engraving_table",
             () -> new BlockItem(DwarfsBlocks.ENGRAVING_TABLE.get(), new Item.Properties()));
 
+    /// <summary>
+    /// Blank Rune
+    /// </summary>
+    public static final RegistryObject<Item> BLANK_RUNE =
+            ITEMS.register("blank_rune", () -> new Item(new Item.Properties()));
+
 }

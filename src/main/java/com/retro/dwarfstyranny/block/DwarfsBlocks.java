@@ -7,6 +7,7 @@ import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.registries.DeferredRegister;
 import net.minecraftforge.registries.ForgeRegistries;
 import net.minecraftforge.registries.RegistryObject;
+import com.retro.dwarfstyranny.block.custom.EngravingTableBlock;
 
 public class DwarfsBlocks {
     public static final DeferredRegister<Block> BLOCKS =

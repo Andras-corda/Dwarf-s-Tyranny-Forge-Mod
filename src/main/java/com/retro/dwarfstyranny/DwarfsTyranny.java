@@ -11,6 +11,9 @@ import net.minecraftforge.fml.event.lifecycle.FMLCommonSetupEvent;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
 import org.slf4j.Logger;
 
+import com.retro.dwarfstyranny.block.entity.DwarfsBlockEntities;
+import com.retro.dwarfstyranny.screen.DwarfsMenuTypes;
+
 @Mod(DwarfsTyranny.MODID)
 // Class principale
 public class DwarfsTyranny {
